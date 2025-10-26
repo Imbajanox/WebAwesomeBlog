@@ -61,7 +61,24 @@ define('DB_USER', 'your_username');
 define('DB_PASS', 'your_password');
 ```
 
-### 4. Set Up Web Server
+### 4. Test Database Connection (Optional but Recommended)
+
+Visit `test-db.php` in your browser to verify the database connection:
+
+```
+http://your-domain.com/test-db.php
+```
+
+This script will:
+- Check if all configuration constants are defined
+- Verify PDO extensions are loaded
+- Test the database connection
+- Check if all required tables exist
+- Show sample data counts
+
+**⚠️ Delete `test-db.php` after successful setup for security!**
+
+### 5. Set Up Web Server
 
 #### Apache
 
@@ -91,7 +108,7 @@ server {
 }
 ```
 
-### 5. Access the Application
+### 6. Access the Application
 
 - **Frontend**: `http://your-domain.com/index.php`
 - **Admin Panel**: `http://your-domain.com/admin/login.php`
